@@ -5,39 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey on Student Activity Emails</title>
   <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-<section>
+<h1>Surveying of Different solutions to the Email Problem</h1>
+<p>Thank you for your participation!</p>
+<p>Please take some time to read the solutions that I am proposing. :)</p>
+<section id="sol1">
   <h2>
     Solution 1: Weekly emails with links to details
   </h2>
+  <p>
+    The student activities are compiled to into an HTML email as seen below. This is to be done weekly.
+    You can click on the links of the activities for details.
+  </p>
+
   <table>
     <thead>
     <tr>
-      <th>Club</th>
-      <th>Activity</th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Venue</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
+    <tr class="category">
+      <td class="cat-title" colspan="5"><h3>Social</h3></td>
+    </tr>
+    <tr class="header">
+      <td>Club</td>
+      <td>Activity</td>
+      <td>Date</td>
+      <td>Time</td>
+      <td>Venue</td>
+    </tr>
     <tr>
       <td>Club 1</td>
-      <td><a href="/activities/social-1.html">Social Activity 1</td>
-      <td>Club 1</td>
-      <td>Club 1</td>
-      <td>Club 1</td>
+      <td><a href="/activities/social-1.html" target="_blank">Group Gathering</a></td>
+      <td>15.06.2019</td>
+      <td>17:00pm</td>
+      <td><a href="https://goo.gl/maps/JwZCN9DDzjxuxZD67" target="_blank">EEE Building</a></td>
     </tr>
-
+    <tr>
+      <td>Club 2</td>
+      <td><a href="/activities/social-1.html" target="_blank">Networking Event</a></td>
+      <td>16.06.2019</td>
+      <td>18:00pm</td>
+      <td><a href="https://goo.gl/maps/YcSpSXC18aC5sBa28" target="_blank">In front of S Building</a></td>
+    </tr>
+    <tr class="category">
+      <td class="cat-title" colspan="5"><h3>Outdoor</h3></td>
+    </tr>
+    <tr class="header">
+      <td>Club</td>
+      <td>Activity</td>
+      <td>Date</td>
+      <td>Time</td>
+      <td>Venue</td>
+    </tr>
+    <tr>
+      <td>Club 1</td>
+      <td><a href="/activities/social-1.html" target="_blank">Sky Diving</a></td>
+      <td>15.06.2019</td>
+      <td>17:00pm</td>
+      <td><a href="https://goo.gl/maps/JwZCN9DDzjxuxZD67" target="_blank">Istanbul</a></td>
+    </tr>
+    <tr>
+      <td>Club 2</td>
+      <td><a href="/activities/social-1.html" target="_blank">Skiing</a></td>
+      <td>16.06.2019</td>
+      <td>18:00pm</td>
+      <td><a href="https://goo.gl/maps/YcSpSXC18aC5sBa28" target="_blank">In front of S Building</a></td>
+    </tr>
+    <tr class="category">
+      <td class="cat-title" colspan="5"><h3>Career</h3></td>
+    </tr>
+    <tr class="header">
+      <td>Club</td>
+      <td>Activity</td>
+      <td>Date</td>
+      <td>Time</td>
+      <td>Venue</td>
+    </tr>
+    <tr>
+      <td>Club 3</td>
+      <td><a href="/activities/social-1.html" target="_blank">Career Development Seminar</a></td>
+      <td>17.06.2019</td>
+      <td>12:30pm</td>
+      <td><a href="https://goo.gl/maps/JwZCN9DDzjxuxZD67" target="_blank">EEE Building</a></td>
+    </tr>
+    <tr>
+      <td>Club 4</td>
+      <td><a href="/activities/social-1.html" target="_blank">Networking Event</a></td>
+      <td>16.06.2019</td>
+      <td>18:00pm</td>
+      <td><a href="https://goo.gl/maps/YcSpSXC18aC5sBa28" target="_blank">In front of S Building</a></td>
+    </tr>
     </tbody>
   </table>
 </section>
-<section>
-
+<section id="sol2">
+  <h2>
+    Solution 2: Filter-based Custom Subscriptions
+  </h2>
+  <p>
+    You will receive separate emails for each activity that matches your subscription filters. The emails will also
+    contain a link for managing your subscriptions. The interface for managing the subscriptions are shown below:
+  </p>
+  <table id="subs">
+    <thead>
+    <tr>
+      <th>Club</th>
+      <th>Category</th>
+      <th>Venue</th>
+      <th>Days</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id="btn">
+      <td>
+        <button onclick="createRow()">Add Filter</button>
+      </td>
+      <td>
+        <button onclick="save()">Save</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 </section>
-<section>
-
+<section id="sol3">
+  <h2>
+    Solution 3: Character Limit on Activities in Email
+  </h2>
+  <p>
+    You will receive emails as you do now - with shorter details of emails in the email.
+  </p>
 </section>
+<script src="js/subs.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+
+
+table {
+  border-spacing: 0;
+}
+tr td:nth-child(1) {
+  border-left: 1px solid #666;
+}
+td {
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+    padding: 4px 8px;
+}
+.header td {
+  font-weight: bold;
+  border-bottom: 2px solid #222222;
+}
+
+
+.cat-title h3 {
+  text-decoration: underline;
+  margin: 4px;
+}
+table {
+  border: 2px solid #222;
+  border-spacing: 0;
+  text-align: center;
+  padding: 10px;
+}
+.cat-title {
+  text-align: left;
+  border-bottom: 2px solid #222222;
+  border-right: none;
+  border-left: none !important;
+}
+
+#btn td {
+  border: none;
+  height: 40px;
+}
+
+
+.box {
+  border: 2px solid #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#subs th {
+  border-bottom: #222222 2px solid;
+  border-top: #222222 2px solid;
+  border-right: #222222 1px solid;
+  border-left: #222222 1px solid;
+}
+
